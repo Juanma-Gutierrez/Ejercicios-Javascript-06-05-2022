@@ -1,0 +1,1349 @@
+<!-- Nombre del programa: Lote de ejercicios Javascript 05/22
+   * Información de la versión: 1.0
+   * Fecha: 06/05/22
+   * Copyright: Juan Manuel Gutiérrez
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/scripts/script.js" type="text/javascript"></script>
+        <script
+            src="js/scripts/muestraBloques.js"
+            type="text/javascript"
+        ></script>
+        <script src="js/bloque1/calculo11.js" type="text/javascript"></script>
+        <script src="js/bloque1/calculo12.js" type="text/javascript"></script>
+        <script src="js/bloque1/calculo13.js" type="text/javascript"></script>
+        <script src="js/bloque1/calculo14.js" type="text/javascript"></script>
+        <script src="js/bloque1/calculo15.js" type="text/javascript"></script>
+        <script src="js/bloque2/calculo21.js" type="text/javascript"></script>
+        <script src="js/bloque2/calculo22.js" type="text/javascript"></script>
+        <script src="js/bloque2/calculo23.js" type="text/javascript"></script>
+        <script src="js/bloque2/calculo24.js" type="text/javascript"></script>
+        <script src="js/bloque3/calculo31.js" type="text/javascript"></script>
+        <script src="js/bloque3/calculo32.js" type="text/javascript"></script>
+        <script src="js/bloque3/calculo34.js" type="text/javascript"></script>
+        <script src="js/bloque3/calculo35.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo41.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo42.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo43.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo44.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo45.js" type="text/javascript"></script>
+        <script src="js/bloque4/calculo46.js" type="text/javascript"></script>
+        <script src="js/bloque5/calculo51.js" type="text/javascript"></script>
+        <script src="js/bloque5/calculo52.js" type="text/javascript"></script>
+        <script src="js/bloque5/calculo53.js" type="text/javascript"></script>
+        <script src="js/bloque5/calculo54.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo61.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo62.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo63.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo64.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo65.js" type="text/javascript"></script>
+        <script src="js/bloque6/calculo66.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Título</title>
+    </head>
+
+    <body>
+        <h1 id="inicio">Ejercicios Javascript para repasar</h1>
+
+        <!-- ┌────────────────────────────────────────────────────────────┐ -->
+        <!-- │  Selección de bloques                                      │ -->
+        <!-- └────────────────────────────────────────────────────────────┘ -->
+        <div id="menu">
+            <div class="menu-container">
+                <button id="muestraBloque1" class="boton">Bloque I</button>
+                <button id="muestraBloque2" class="boton">Bloque II</button>
+                <button id="muestraBloque3" class="boton">Bloque III</button>
+                <button id="muestraBloque4" class="boton">Bloque IV</button>
+                <button id="muestraBloque5" class="boton">Bloque V</button>
+                <button id="muestraBloque6" class="boton">Bloque VI</button>
+            </div>
+        </div>
+
+        <div class="content" id="bloque1">
+            <div class="titulo">
+                <h1 class="bloque">Bloque I</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE I 1                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">I 1 - Mayoría de edad</div>
+                    <p>
+                        Pide la edad y si es mayor de 18 años indica que ya
+                        puede conducir.
+                    </p>
+                    <label>
+                        <pre>Introduce edad: </pre></label
+                    ><input
+                        type="text"
+                        id="num11"
+                        placeholder="Edad"
+                        class="entrada"
+                        title="Introduce la edad"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula11"
+                        value="Calcula"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado11" class="resultado"></p>
+                </div>
+
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE I 2                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">I 2 - Notas</div>
+                    <p>
+                        Pide una nota (número). Muestra la calificación según la
+                        nota: 0-3: Muy deficiente 3-5: Insuficiente 5-6:
+                        Suficiente 6-7: Bien 7-9: Notable 9-10: Sobresaliente.
+                    </p>
+                    <label>
+                        <pre>Introduce nota: </pre></label
+                    ><input
+                        type="text"
+                        id="num12"
+                        placeholder="Nota"
+                        class="entrada"
+                        title="Introduce la nota"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula12"
+                        value="Calcula"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado12" class="resultado"></p>
+                </div>
+
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE I 3                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">I 3 - Script de cadenas de texto</div>
+                    <p>
+                        Realiza un script que pida cadenas de texto hasta que se
+                        pulse "cancelar". Al salir con "cancelar" deben
+                        mostrarse todas las cadenas concatenadas con un guión.
+                    </p>
+                    <label>
+                        <pre>Introduce palabra: </pre></label
+                    ><input
+                        type="text"
+                        id="num13"
+                        placeholder="Palabra"
+                        class="entrada"
+                        title="Introduce la edad"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula13"
+                        value="Introducir"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula13Cancelar"
+                        value="Cancelar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado13" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE I 4                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">I 4 - Introducción de números</div>
+                    <p>
+                        Realiza un script que pida números hasta que se pulse
+                        "cancelar". Si no es un número deberá indicarse con un
+                        «alert» y seguir pidiendo. Al salir con "cancelar"
+                        deberá indicarse la suma total de los números
+                        introducidos.
+                    </p>
+                    <label>
+                        <pre>Introduce número: </pre></label
+                    ><input
+                        type="text"
+                        id="num14"
+                        placeholder="Número"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula14"
+                        value="Introducir"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula14Cancelar"
+                        value="Cancelar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado14" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE I 5                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">I 5 - Letra del DNI</div>
+                    <p>
+                        Realizar una página con un script que calcule el valor
+                        de la letra de un número de DNI.
+                    </p>
+                    <p>El número debe ser entre 0 y 99999999.</p>
+                    <p>
+                        Debemos calcular el resto de la división entera entre el
+                        número y el número 23.
+                    </p>
+                    <p>
+                        Según el resultado, de 0 a 22, le corresponderá una
+                        letra de las siguientes: (T, R, W, A, G, M, Y, F, P, D,
+                        X, B, N, J, Z, S, Q, V, H, L, C, K, E).
+                    </p>
+                    <p>
+                        Si lo introducido no es un número deberá indicarse con
+                        un alert y volver a preguntar.
+                    </p>
+                    <label>
+                        <pre>Introduce número DNI: </pre></label
+                    ><input
+                        type="text"
+                        id="num15"
+                        placeholder="DNI"
+                        pattern="[0-9]{1,8}"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula15"
+                        value="Calcular"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado15" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+
+        <div class="content" id="bloque2">
+            <div class="titulo">
+                <h1 class="bloque">Bloque II</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE II 1                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">II 1 - Pirámide</div>
+                    <p>
+                        Realiza un script que escriba una pirámide del 1 al 30
+                        de las siguientes formas:
+                    </p>
+                    <pre>
+1***  ***1  ***1***  ***1***
+22**  **22  **222**  **121**
+333*  *333  *33333*  *12321*
+4444  4444  4444444  1234321
+......</pre
+                    >
+                    <br />
+                    <label>
+                        <pre>Introduce número: </pre></label
+                    ><input
+                        type="text"
+                        id="num21"
+                        placeholder="Número"
+                        class="entrada"
+                        title="Introduce el número de pisos de la pirámide"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula21Izquierda"
+                        value="Izquierda"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula21Derecha"
+                        value="Derecha"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula21Centro"
+                        value="Centro"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula21CentroAscendente"
+                        value="Centro asc."
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado21" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE II 2                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">II 2 - Pirámide invertida</div>
+                    <p>
+                        Haz un script que escriba una pirámide inversa de los
+                        números del 1 al número que indique el usuario de la
+                        siguiente forma:
+                    </p>
+                    <p>Suponiendo que indica 30:</p>
+                    <pre>
+303030303030303030303030303030303030303030303030303030303030
+2929292929292929292929292929292929292929292929292929292929
+28282828282828282828282828282828282828282828282828282828
+...
+333
+22
+1</pre
+                    >
+                    <br />
+                    <label>
+                        <pre>Introduce número: </pre></label
+                    ><input
+                        type="text"
+                        id="num22"
+                        placeholder="Número"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula22"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado22" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE II 3                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">II 3 - Pirámide versión 2</div>
+                    <p>
+                        Crea script para generar pirámide siguiente con los
+                        números del 1 al número que indique el usuario (no mayor
+                        de 50).
+                    </p>
+                    <pre>
+1
+12
+123
+1234
+12345
+123456
+……</pre
+                    >
+                    <br />
+                    <label>
+                        <pre>Introduce número: </pre></label
+                    ><input
+                        type="text"
+                        id="num23"
+                        placeholder="Número"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula23"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado23" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE II 4                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">II 4 Múltiplos de 4 y 9</div>
+                    <p>
+                        Un script que que dado un rango numérico (ej. 1 al 500),
+                        escriba los números del 1 al 500, que indique cuales son
+                        múltiplos de 4 y de 9 y que cada 5 líneas muestre una
+                        línea horizontal.
+                    </p>
+                    <pre>
+1
+2
+3
+4 (Múltiplo de 4)
+5
+————————————————————-
+6
+7
+8 (Múltiplo de 4)
+9 (Múltiplo de 9)
+10</pre
+                    >
+                    <br />
+                    <label>
+                        <pre>Introduce nº inicial: </pre></label
+                    ><input
+                        type="text"
+                        id="num24i"
+                        placeholder="Número inicial"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Introduce nº final: </pre></label
+                    ><input
+                        type="text"
+                        id="num24f"
+                        placeholder="Número final"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula24"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado24" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+
+        <div class="content" id="bloque3">
+            <div class="titulo">
+                <h1 class="bloque">Bloque III</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE III 1                                       │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">
+                        III 1 - Nombre del mayor de una lista
+                    </div>
+                    <p>
+                        Realiza un script que pida por teclado 3 edades y 3
+                        nombres e indique el nombre del mayor.
+                    </p>
+                    <label>
+                        <pre>Introduce Nombre: </pre></label
+                    ><input
+                        type="text"
+                        id="num31Nombre"
+                        placeholder="Nombre"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Introduce edad: </pre></label
+                    ><input
+                        type="text"
+                        id="num31Edad"
+                        placeholder="Edad"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula31"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado31" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE III 2                                       │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">
+                        III 2 - Generación de número aleatorio
+                    </div>
+                    <p>
+                        Realiza un script que genere un número aleatorio entre
+                        dos números dados.
+                    </p>
+                    <label>
+                        <pre>Introduce mínimo: </pre></label
+                    ><input
+                        type="text"
+                        id="num32Min"
+                        placeholder="Mínimo"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Introduce máximo: </pre></label
+                    ><input
+                        type="text"
+                        id="num32Max"
+                        placeholder="Máximo"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula32Num"
+                        value="Número"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula32Mayus"
+                        value="Letra mayúscula"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula32Letra"
+                        value="Generar letra"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado32" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- no hay bloque III 3 -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE III 4                                       │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">III 4 - Quiniela</div>
+                    <p>
+                        Realiza un script que imprima 14 resultados aleatorios
+                        de una quiniela 1 X 2. Ejemplo de resultado:
+                    </p>
+                    <pre>
+Resultado 1: 1
+Resultado 2: X
+Resultado 3: 2
+...
+Resultado 14: 2
+</pre
+                    >
+                    <input
+                        type="button"
+                        id="calcula34"
+                        value="Generar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado34" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE III 5                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">III 5 - Quiniela con probabilidad</div>
+                    <p>
+                        Realiza el script anterior pero con la probabilidad de
+                        que salga el 1 sea del 60%, la de la X del 30% y la del
+                        2 del 10%.
+                    </p>
+                    <label>
+                        <pre>Probabilidad de 1: </pre></label
+                    ><input
+                        type="text"
+                        id="num351"
+                        placeholder="Probabilidad de 1"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Probabilidad de X: </pre></label
+                    ><input
+                        type="text"
+                        id="num35X"
+                        placeholder="Probabilidad de X"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Probabilidad de 2: </pre></label
+                    ><input
+                        type="text"
+                        id="num352"
+                        placeholder="Probabilidad de 2"
+                        class="entrada"
+                    />
+                    <br />
+
+                    <input
+                        type="button"
+                        id="calcula35"
+                        value="Generar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado35" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+
+        <div class="content" id="bloque4">
+            <div class="titulo">
+                <h1 class="bloque">Bloque IV</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 1                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 1 - Mayúsculas y minúsculas</div>
+                    <p>
+                        Realiza un script que pida un texto y lo muestre en
+                        mayúsculas. Resultado: "HoLa CaRaCoLa".
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre>
+                    </label>
+                    <input
+                        type="text"
+                        id="num41"
+                        placeholder="Frase"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula41"
+                        value="Modificar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado41" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 2                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 2 - Separación de letras</div>
+                    <p>
+                        Realiza un script que pida una cadena de texto y la
+                        muestre poniendo el signo – entre cada carácter sin usar
+                        el método replace. Por ejemplo, si tecleo "hola que
+                        tal", deberá salir "h-o-l-a- -q-u-e- -t-a-l".
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre></label
+                    ><input
+                        type="text"
+                        id="num42"
+                        placeholder="Frase"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula42"
+                        value="Modificar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado42" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 3                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 3 - Contar vocales</div>
+                    <p>
+                        Realiza un script que cuente el número de vocales que
+                        tiene un texto.
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre></label
+                    ><input
+                        type="text"
+                        id="num43"
+                        placeholder="Frase"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula43"
+                        value="Contar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado43" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 4                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 4 - Extraer texto en paréntesis</div>
+                    <p>
+                        Pedimos una cadena de texto que sabemos que puede
+                        contener paréntesis. Realiza un script que extraiga la
+                        cadena que se encuentra entre los paréntesis. Ejemplo:
+                        Si escribimos el texto "Hola (que) tal" se mostrará
+                        "que". Si no existe el signo "(" mostrará una cadena
+                        vacía y si existe el signo "("pero no el signo ")"
+                        mostrará desde el primer paréntesis hasta el final.
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre></label
+                    ><input
+                        type="text"
+                        id="num44"
+                        placeholder="Frase"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula44"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado44" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 5                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 5 - Invertir cadena de texto</div>
+                    <p>
+                        Realiza un script que pida una cadena de texto y la
+                        devuelva al revés. Es decir, si tecleo "hola que tal"
+                        deberá mostrar "lat euq aloh".
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre></label
+                    ><input
+                        type="text"
+                        id="num45"
+                        placeholder="Palabra"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula45"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado45" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE IV 6                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">IV 6 - Palíndromo</div>
+                    <p>
+                        Realiza un script que pida un texto e indique si es un
+                        palíndromo.
+                    </p>
+                    <p>
+                        Ejemplo de palíndromo: "Dábale arroz a la zorra el
+                        abad".
+                    </p>
+                    <label>
+                        <pre>Introduce frase: </pre></label
+                    ><input
+                        type="text"
+                        id="num46"
+                        placeholder="Frase"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula46"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado46" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+
+        <div class="content" id="bloque5">
+            <div class="titulo">
+                <h1 class="bloque">Bloque V</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE V 1                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">V 1 - Localizar la primera vocal</div>
+                    <p>
+                        Realiza un script que muestre la posición de la primera
+                        vocal de un texto introducido por teclado.
+                    </p>
+                    <label>
+                        <pre>Introduce palabra: </pre></label
+                    ><input
+                        type="text"
+                        id="num51"
+                        placeholder="Palabra"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula51"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado51" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE V 2                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">
+                        V 2 - Primera vocal (<i>includes</i>)
+                    </div>
+                    <p>
+                        Realiza el mismo ejercicio anterior pero utilizando el
+                        método includes. Si no recuerdas como se usa aquí te
+                        dejo la chuleta:
+                    </p>
+                    <a href="https://tutobasico.com/string-javascript/"
+                        >Métodos de la clase String Javascript</a
+                    >
+                    <label>
+                        <pre>Introduce palabra: </pre></label
+                    ><input
+                        type="text"
+                        id="num52"
+                        placeholder="Palabra"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula52"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado52" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE V 3                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">V 3 - Fibonacci</div>
+                    <p>
+                        Realiza un script que muestre la serie de fibonacci
+                        hasta un número entre 1 y 100 pedido por teclado.
+                    </p>
+                    <label>
+                        <pre>Introduce Número: </pre></label
+                    ><input
+                        type="text"
+                        id="num53"
+                        placeholder="Número"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula53"
+                        value="Generar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado53" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE V 4                                         │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">
+                        V 4 - Juego piedra, papel, tijera, lagarto, Spock
+                    </div>
+                    <p>
+                        Realiza un juego de Piedra, papel, tijera, lagarto,
+                        Spock contra el Pc.
+                    </p>
+                    <label>
+                        <pre>Elige:</pre>
+                    </label>
+                    <select id="num54" class="boton">
+                        <option value="" selected disabled hidden>Elige</option>
+                        <option value="0">✊🏽 Piedra</option>
+                        <option value="1">✋🏽 Papel</option>
+                        <option value="2">✌🏽 Tijera</option>
+                        <option value="3">🤏🏽 Lagarto</option>
+                        <option value="4">🖖🏽 Spock</option>
+                    </select>
+
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula54"
+                        value="Jugar"
+                        class="boton"
+                    />
+                    <input
+                        type="button"
+                        id="calcula54Aleatorio"
+                        value="Juego aleatorio"
+                        class="boton"
+                    />
+                </div>
+
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado54" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+
+        <div class="content" id="bloque6">
+            <div class="titulo">
+                <h1 class="bloque">Bloque VI</h1>
+            </div>
+            <div class="grid-container">
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 1                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 1 - Número PI</div>
+                    <p>
+                        Crea una función que devuelva el número PI con dos
+                        decimales. Utiliza la variable PI que ya existe en
+                        javascript.
+                    </p>
+                    <input
+                        type="button"
+                        id="calcula61"
+                        value="Generar PI"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado61" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 2                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 2 - DNI v2</div>
+                    <p>
+                        Crea una función que reciba un parámetro, un dni, y
+                        devuelva la letra del mismo. Si el dni pasado tiene
+                        algún error devolverá "".
+                    </p>
+                    <label>
+                        <pre>Introduce DNI: </pre></label
+                    ><input
+                        type="text"
+                        id="num62"
+                        placeholder="DNI"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula62"
+                        value="Comprobar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado62" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 3                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 3 - Precio con IVA</div>
+                    <p>
+                        Crea una función que reciba 2 parámetros, precio e iva,
+                        y devuelva el precio con iva incluido. Si no recibe el
+                        iva, aplicará el 21 por ciento por defecto.
+                    </p>
+                    <label>
+                        <pre>Introduce precio: </pre></label
+                    ><input
+                        type="text"
+                        id="num63Precio"
+                        placeholder="Precio"
+                        class="entrada"
+                    />
+                    <br />
+                    <label>
+                        <pre>Introduce IVA: </pre>
+                    </label>
+                    <select id="num63Iva">
+                        <option value="0.21" selected disabled hidden>
+                            Tipo de IVA
+                        </option>
+                        <option value="0.21">21%</option>
+                        <option value="0.10">10%</option>
+                        <option value="0.04">4%</option>
+                    </select>
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula63"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado63" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 4                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 4 - Invertir texto</div>
+                    <p>
+                        Crea una función que reciba un texto y lo devuelva al
+                        revés.
+                    </p>
+                    <label>
+                        <pre>Introduce texto: </pre></label
+                    ><input
+                        type="text"
+                        id="num64"
+                        placeholder="Texto"
+                        class="entrada"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula64"
+                        value="Invertir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado64" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 5                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 5 -Generar nº entero aleatorio</div>
+                    <p>
+                        Crea una función que genere número entero aleatorio
+                        entre min y max, que serán pasados como parámetros. Por
+                        defecto min = 1 y max = 100.
+                    </p>
+                    <label>
+                        <pre>Introduce mínimo: </pre></label
+                    ><input
+                        type="text"
+                        id="num65Min"
+                        placeholder="Mínimo"
+                        class="entrada"
+                        value="1"
+                    />
+                    <br />
+                    <label>
+                        <pre>Introduce máximo: </pre></label
+                    ><input
+                        type="text"
+                        id="num65Max"
+                        placeholder="Máximo"
+                        class="entrada"
+                        value="100"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        id="calcula65"
+                        value="Introducir"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado65" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+
+                <!-- ┌─────────────────────────────────────────────────────┐ -->
+                <!-- │  BLOQUE VI 6                                        │ -->
+                <!-- └─────────────────────────────────────────────────────┘ -->
+                <div class="grid-item">
+                    <div class="title">VI 6 - 100 números aleatorios</div>
+                    <p>
+                        Crea una función que genere 100 números aleatorios entre
+                        1 y 1000 que no se repitan y luego muestralos por
+                        pantalla.
+                    </p>
+                    <input
+                        type="button"
+                        id="calcula66"
+                        value="Generar"
+                        class="boton"
+                    />
+                </div>
+                <!-- RESULTADO -->
+                <div class="grid-item">
+                    <div class="title">Solución</div>
+                    <label>
+                        <pre>Resultado: </pre>
+                    </label>
+                    <p id="resultado66" class="resultado"></p>
+                </div>
+                <!-- FIN BLOQUE ──────────────────────────────────────────── -->
+            </div>
+        </div>
+        <a href="#inicio" id="saltador">↑</a>
+    </body>
+</html>
